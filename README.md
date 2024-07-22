@@ -3,7 +3,7 @@ MonoChrome - Bspwm Theme.
 This is still a work in progrss.
 
 
-- Distro: Archlinux - WM: Bspwm -
+- Distro: Archlinux - WM: Bspwm - Polybar (Hack Theme) - Conky (modify) - Rofi -
 ![mono1](https://github.com/user-attachments/assets/98a38330-05fc-4925-92f7-92d15b91fb5b)
 
 - Rofi - Dmenu Theme - 
