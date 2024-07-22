@@ -7,13 +7,13 @@ RECOMENDATIONS.
 
 Strongly suggest to go to the next repositories to get deatail info:
 
-Archlinux: https://wiki.archlinux.org/title/Main_page
-Bspwm: https://github.com/baskerville/bspwm.git
-Rofi: https://github.com/adi1090x/rofi.git
-Polybar: https://github.com/polybar/polybar.git
-Ranger: https://github.com/ranger/ranger.git
-Qutebrowser: https://github.com/qutebrowser/qutebrowser.git
-Kitty: https://github.com/kovidgoyal/kitty.git
+- Archlinux: https://wiki.archlinux.org/title/Main_page
+- Bspwm: https://github.com/baskerville/bspwm.git
+- Rofi: https://github.com/adi1090x/rofi.git
+- Polybar: https://github.com/polybar/polybar.git
+- Ranger: https://github.com/ranger/ranger.git
+- Qutebrowser: https://github.com/qutebrowser/qutebrowser.git
+- Kitty: https://github.com/kovidgoyal/kitty.git
 
 
 
