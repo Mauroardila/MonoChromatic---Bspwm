@@ -20,4 +20,5 @@ This is still a work in progrss.
 
 ![mono5](https://github.com/user-attachments/assets/3ddd2b1d-d089-4fce-a13f-eb981e0c7aad)
 
+Rofi (powermenu) .rasi modify -
 ![mono6](https://github.com/user-attachments/assets/3a43a73c-f1e9-4f22-9739-bcdd9d1e8271)
