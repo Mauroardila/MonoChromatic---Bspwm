@@ -10,6 +10,8 @@ This is still a work in progrss.
 
 ![mono2](https://github.com/user-attachments/assets/b97f97ef-d577-4ad5-baec-8a53bd21a2a5)
 
+- Ranger (snow theme) - Fastfetch - ncmpcpp (minimal - no colors) -
+
 ![mono3](https://github.com/user-attachments/assets/ea7ea114-15db-4aa7-bf09-ec03ec29ee18)
 
 ![mono4](https://github.com/user-attachments/assets/f7320da1-36b6-440f-908e-dcaaf73954d0)
