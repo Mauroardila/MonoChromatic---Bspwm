@@ -1,6 +1,8 @@
 MonoChrome - Bspwm Theme.
 
-This is still a work in progrss.
+This is work in progrss.
+
+You are free to use the config files as you want.
 
 
 - Distro: Archlinux - WM: Bspwm - Polybar (Hack Theme) - Conky (modify) - Rofi -
