@@ -1,0 +1,25 @@
+### Directories ###
+ncmpcpp_directory 	= ~/.ncmpcpp
+lyrics_directory  	= ~/.ncmpcpp/lyrics
+mpd_music_dir     	= ~/Music
+mpd_host 		  	= "localhost"
+mpd_port 		  	= "6600"
+mpd_crossfade_time 	= "2"
+
+visualizer_in_stereo = "yes"|
+visualizer_output_name = "mpd"
+visualizer_type = "wave" (spectrum/wave)
+visualizer_color = "green"
+
+playlist_display_mode = "classic" (classic/columns)
+
+main_window_color = "white"
+
+
+progressbar_color = "white"
+progressbar_elapsed_color = "white"
+
+statusbar_color = "white"
+colors_enabled = "no"
+
+song_list_format = "[%l] {%a - %t}|{%f} {$R %b}"
