@@ -1,0 +1,97 @@
+configuration {
+  display-window: "Windows:";
+  display-drun:   "Applications:";
+  display-run:    "Run:";
+
+  drun-display-format: "{name}";
+  window-display-format: "{name}";
+
+  font: "Iosevka Nerd Font 12";
+  modi: "window,run,drun";
+}
+
+@theme "/dev/null"
+
+* {
+    bg-normal: #000000;
+
+    fg-normal: #aaaaaa;
+    fg-focus:  #ffffff;
+
+    border:  0;
+    margin:  0;
+    padding: 0;
+    spacing: 0;
+}
+
+window {
+    background-color: @bg-normal;
+    children:         [ horibox ];
+    location:         north;
+    padding:          4px;
+    anchor:           north;
+    width:            100%;
+}
+
+horibox {
+    orientation: horizontal;
+    children:    [ prompt, entry, listview ];
+}
+
+listview {
+    background-color: @bg-normal;
+    spacing:          50px;
+    columns:          1;
+    layout:           horizontal;
+    lines:            100;
+}
+
+entry {
+    background-color: @bg-normal;
+    text-color:       @fg-focus;
+    padding:          0px 5px 0px 5px;
+    expand:           false;
+    width:            15em;
+}
+
+element {
+  background-color: transparent;
+  text-color:       @fg-normal;
+  padding:          0px 2px;
+}
+
+element selected {
+    background-color: transparent;
+    text-color:       @fg-focus;
+}
+
+element-text {
+    background-color: transparent;
+    vertical-align:   0.5;
+    text-color:       inherit;
+}
+
+element-icon {
+    background-color: transparent;
+    padding: 0 10 0 0;
+    size: 14;
+}
+
+inputbar {
+    background-color: @bg-normal;
+    children:         [prompt, entry];
+}
+
+mainbox {
+    background-color: @bg-normal;
+    children:         [inputbar, listview];
+}
+
+prompt {
+    background-color: @bg-normal;
+    text-color:       @fg-focus;
+    enabled:          true;
+    padding:          0 3px 0 0;
+}
+
+/* vim: ft=sass
