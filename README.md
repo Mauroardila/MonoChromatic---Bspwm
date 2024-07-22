@@ -3,9 +3,10 @@ MonoChrome - Bspwm Theme.
 This is still a work in progrss.
 
 
-Distro: Archlinux
-WM: Bspwm
+- Distro: Archlinux - WM: Bspwm -
 ![mono1](https://github.com/user-attachments/assets/98a38330-05fc-4925-92f7-92d15b91fb5b)
+
+- Rofi - Dmenu Theme - 
 
 ![mono2](https://github.com/user-attachments/assets/b97f97ef-d577-4ad5-baec-8a53bd21a2a5)
 
