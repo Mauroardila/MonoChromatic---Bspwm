@@ -14,6 +14,8 @@ This is still a work in progrss.
 
 ![mono3](https://github.com/user-attachments/assets/ea7ea114-15db-4aa7-bf09-ec03ec29ee18)
 
+- Qutebrowser (black and white) (tilde start page). 
+
 ![mono4](https://github.com/user-attachments/assets/f7320da1-36b6-440f-908e-dcaaf73954d0)
 
 ![mono5](https://github.com/user-attachments/assets/3ddd2b1d-d089-4fce-a13f-eb981e0c7aad)
