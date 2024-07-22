@@ -3,7 +3,7 @@ MonoChrome - Bspwm Theme.
 This is work in progress.
 You are free to use the config files as you want.
 
-RECOMENDATIONS.
+RECOMMENDATIONS.
 
 Strongly suggest to go to the next repositories to get deatail info:
 
@@ -16,7 +16,7 @@ Strongly suggest to go to the next repositories to get deatail info:
 - Kitty: https://github.com/kovidgoyal/kitty.git
 
 
-
+_____________________________________________________________________________________________________
 
 
 - Distro: Archlinux - WM: Bspwm - Polybar (Hack Theme) - Conky (modify) - Rofi -
