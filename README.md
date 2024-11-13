@@ -13,6 +13,8 @@ Strongly suggest to go to the next repositories to get deatail info:
 - Polybar: https://github.com/polybar/polybar.git
 - Ranger: https://github.com/ranger/ranger.git
 - Qutebrowser: https://github.com/qutebrowser/qutebrowser.git
+- Librewolf: https://librewolf.net/
+- Firefox: (basic keybindings:  https://github.com/Dook97/firefox-qutebrowser-userchrome.git )
 - Kitty: https://github.com/kovidgoyal/kitty.git
 
 
