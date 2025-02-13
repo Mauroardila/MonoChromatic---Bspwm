@@ -38,6 +38,10 @@ ________________________________________________________________________________
 
 ![mono4](https://github.com/user-attachments/assets/f7320da1-36b6-440f-908e-dcaaf73954d0)
 
+- kew (cli music player)
+- ![kew](https://github.com/user-attachments/assets/27b601d9-178c-4665-8372-df5030150386)
+
+
 ![mono5](https://github.com/user-attachments/assets/3ddd2b1d-d089-4fce-a13f-eb981e0c7aad)
 
 Rofi (powermenu) .rasi modify -
