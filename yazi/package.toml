@@ -1,0 +1,54 @@
+[[plugin.deps]]
+use = "yazi-rs/plugins:full-border"
+rev = "02d18be"
+hash = "882ed23839778f82dc137248979c8681"
+
+[[plugin.deps]]
+use = "Ape/simple-status"
+rev = "3ef1447"
+hash = "68603fdd1dcaf415227e2c77a9317947"
+
+[[plugin.deps]]
+use = "imsi32/yatline"
+rev = "9328205"
+hash = "3e51d1fd8a2e481fcfa8eab1251d1c5f"
+
+[[plugin.deps]]
+use = "wekauwau/yatline-tokyo-night"
+rev = "5a8d026"
+hash = "60e83a7a6d5f6dc00480bc33dbbf3888"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:no-status"
+rev = "02d18be"
+hash = "26907959d4d45f6258487f9bfe54a9c4"
+
+[[plugin.deps]]
+use = "dedukun/bookmarks"
+rev = "202e450"
+hash = "9e2f6f7381542d3adb3080b394b431b4"
+
+[[flavor.deps]]
+use = "tkapias/moonfly"
+rev = "395c686"
+hash = "f1c75db953010661073c665c237c5722"
+
+[[flavor.deps]]
+use = "PinThePenguine/sunset"
+rev = "181acd4"
+hash = "cc4c39af7098f02c42fec223fc1fc967"
+
+[[flavor.deps]]
+use = "yazi-rs/flavors:catppuccin-mocha"
+rev = "fd85060"
+hash = "c40e434318a8ceffd01842f8dfb2390e"
+
+[[flavor.deps]]
+use = "tkapias/nightfly"
+rev = "599b8ad"
+hash = "d1a9e05ecbbd63bc5bb85a54e7f1e33a"
+
+[[flavor.deps]]
+use = "dangooddd/kanagawa"
+rev = "d98f0c3"
+hash = "cada780385f75abbcfbf5343256b441"
