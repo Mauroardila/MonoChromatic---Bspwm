@@ -4,9 +4,7 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 
 $HOME/.config/polybar/hack/launch.sh
 
-bspc monitor -d I II III IV V
-
-feh --bg-center ~/home/mao/Downloads/1.jpg  
+bspc monitor -d I II III IV V VI
 
 bspc config border_width         1
 bspc config window_gap          12
@@ -24,41 +22,39 @@ bspc config presel_feedback true
 ## Manage all the unmanaged windows remaining from a previous session.
 bspc wm --adopt-orphans
 
-bspc rule -a Zathura state=tiled
+bspc rule -a Zathura desktop='^4' state=tiled follow=on focus=on;
 bspc rule -a Nemo desktop='^1' follow=on focus=on; 
 bspc rule -a firefox desktop='^2' follow=on focus=on
 bspc rule -a Navegador Mullvad desktop='^2' follow=on focus=on
-bspc rule -a Lxappearance desktop='^3' follow=on focus=on
-bspc rule -a Spotify desktop='^3' follow=on focus=on
 bspc rule -a LibreWolf desktop='^2' follow=on focus=on
 bspc rule -a qutebrowser desktop='^2' follow=on focus=on
-bspc rule -a kitty desktop='^5' follow=on focus=on
-bspc rule -a ranger desktop='^5' follow=on focus=on;
+bspc rule -a Lxappearance desktop='^3' follow=on focus=on
+bspc rule -a Spotify desktop='^3' follow=on focus=on
+bspc rule -a calcurse desktop= '^5'follow=on focus=on 
 bspc rule -a Soffice desktop='^4'  follow=on focus=on
 bspc rule -a sioyek desktop= '^4' follow=on focus=on
+bspc rule -a kitty desktop='^5' follow=on focus=on
+bspc rule -a neomutt desktop='^5' follow=on focus=on
+##bspc rule -a ranger desktop='^5' state=floating follow=off focus=on \ rectangle=1200x600+150+200
+bspc rule -a ranger desktop='^5' follow=on focus=on
+bspc rule -a kew desktop='^6' state=floating follow=off focus=on \ rectangle=590x800+650+200
+bspc rule -a ncmpcpp desktop='^6' state=floating follow=off focus=on \ rectangle=800x600+580+400
+bspc rule -a rmpc desktop='^6' state=floating follow=off focus=on \ rectangle=800x600+580+400
+bspc rule -a yazi desktop='^5' follow=on focus=on \ rectangle=1200x600+150+200
 
-# Lauch xsettingsd daemon
-xsettingsd --config="$BSPDIR"/xsettingsd &
+###bspc rule -a ranger desktop='^5' state=floating follow=off focus=on \ rectangle=900x600+500+200
+
+
 
 # Autostart apps
 
 conky &
 
-# Start bspwm scripts
+###feh --bg-fill /home/mao/
 
-bspfloat
-bspterm
-bspwinmask &
-
-
-# Fix cursor
+ # Fix cursor
 xsetroot -cursor_name left_ptr
 
-# Set wallpaper
-#----------------------------
-
-feh --bg-scale ~/.config/bspwm/wallpaper/3.jpg
 
 pkill xautolock
 xautolock -time 4 -locker "betterlockscreen -l" -notify 10 -notifier "notify-send 'Locker' 'Locking screen in 20 seconds'" -killtime 5 -killer "systemctl suspend" &
-
