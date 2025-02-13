@@ -1,4 +1,3 @@
-
 # wm independent hotkeys
 #
 
@@ -8,7 +7,7 @@ super + Return
 	
 # launch apps
 super + shift + {n,f,g,p}
-	{nemo,firefox,gean,qutebrowser}
+	{nemo,firefox,gean,librewolf}
 
 #App Launcher
 alt + F1
@@ -19,7 +18,7 @@ alt + F2
     /home/mao/.config/rofi/applets/bin/rofi-search.sh
 
 
-# rofi filebrowse
+# rofi filebrowser
 super + shift + m
       rofi -show filebrowser -modes filebrowser
 
@@ -28,41 +27,62 @@ super + {d,e}
     {rofi -show run,rofi -show window,,$HOME/.local/bin/powermenu}
 
 # Ranger fm    
-super + r
+super + 
 	kitty -e --class ranger ranger
 
 # calcrse
 super + c
        kitty -e --class calcurse calcurse
 
-# Vim
+# neomutt
 super + i
-       kitty -e --class vim vim
+       kitty --name "float-center" -- "neomutt"
 
-# spotify
-super + ñ
-  Spotify
-    
+# kew
+super + f 
+       kitty -e --class kew kew
+
+
+# ncmpcpp
+super + p
+      kitty -e --class ncmpcpp ncmpcpp
+
+# rmpc
+#super + f
+      kitty -e --class rmpc rmpc
+
+# Ranger fm    
+super + r
+	kitty -e --class yazi yazi
+
+
 # Wifi
 super + n
-       /home/mao/.config/rofi/scripts/rofi-network-manager.sh
+     kitty -e --class tui-network tui-network
+
 
 # powermenu
 super + x
-      /home/mao/.config/rofi/powermenu/type-1/powermenu.sh
+      /home/mao/.config/polybar/hack/scripts/powermenu/powermenu.sh
 
 # lockscreen
 super + alt + u
       betterlockscreen -l
 
-# play pause 
-super + F7
-  playerctl play-pause
+# screenshot
+alt + F12
+    /home/mao/.config/polybar/hack/scripts/takess.sh
+
+  
+# mount - unmount
+alt + F11
+  /home/mao/.config/polybar/hack/scripts/udiskie-dmenu
+
 
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
-
+	
 #
 # bspwm hotkeys
 #
