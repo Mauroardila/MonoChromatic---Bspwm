@@ -41,6 +41,10 @@ ________________________________________________________________________________
 - kew (cli music player)
 - ![kew](https://github.com/user-attachments/assets/27b601d9-178c-4665-8372-df5030150386)
 
+- Tui-Network
+- ![tuinet](https://github.com/user-attachments/assets/75f003a9-ae84-4229-91df-a25561edf715)
+
+
 
 ![mono5](https://github.com/user-attachments/assets/3ddd2b1d-d089-4fce-a13f-eb981e0c7aad)
 
