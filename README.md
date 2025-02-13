@@ -12,10 +12,12 @@ Strongly suggest to go to the next repositories to get deatail info:
 - Rofi: https://github.com/adi1090x/rofi.git
 - Polybar: https://github.com/polybar/polybar.git
 - Ranger: https://github.com/ranger/ranger.git
+- yazi: https://yazi-rs.github.io/features
 - Qutebrowser: https://github.com/qutebrowser/qutebrowser.git
 - Librewolf: https://librewolf.net/
 - Firefox: (basic keybindings: https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly)
 - Kitty: https://github.com/kovidgoyal/kitty.git
+- 
 
 
 _____________________________________________________________________________________________________
