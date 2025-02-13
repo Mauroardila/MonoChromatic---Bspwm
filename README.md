@@ -17,7 +17,7 @@ Strongly suggest to go to the next repositories to get deatail info:
 - Librewolf: https://librewolf.net/
 - Firefox: (basic keybindings: https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly)
 - Kitty: https://github.com/kovidgoyal/kitty.git
-- 
+- Tui-Network: https://github.com/Zatfer17/tui-network.git
 
 
 _____________________________________________________________________________________________________
