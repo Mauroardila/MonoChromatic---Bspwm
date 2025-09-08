@@ -1,3 +1,7 @@
+/* ===================================================================
+   Tridactyl Dracula Black-Bottom Theme with Iosevka Nerd Font
+   =================================================================== */
+
 :root {
   /* Dracula palette */
   --dracula-background: #000000;
@@ -45,4 +49,70 @@
   --tridactyl-header-first-bg: var(--dracula-black);
   --tridactyl-header-second-bg: var(--dracula-black);
   --tridactyl-header-third-bg: var(--dracula-black);
+}
+
+/* ===================================================================
+   Force Iosevka Nerd Font everywhere
+   =================================================================== */
+
+/* Command line iframe */
+:root #cmdline_iframe,
+:root #cmdline_iframe * {
+  font-family: "Iosevka Nerd Font", monospace !important;
+}
+
+/* Completions dropdown */
+:root #completions,
+:root #completions * {
+  font-family: "Iosevka Nerd Font", monospace !important;
+}
+
+/* Hints */
+:root .TridactylHintElem,
+:root .TridactylHint {
+  font-family: "Iosevka Nerd Font", monospace !important;
+}
+
+/* Status indicator */
+:root #tridactyl-status,
+:root #tridactyl-status * {
+  font-family: "Iosevka Nerd Font", monospace !important;
+}
+
+/* ===================================================================
+   Drop-down adjustments (force bottom, pure black background)
+   =================================================================== */
+
+/* Hide section headers */
+:root #completions .sectionHeader {
+  display: none !important;
+}
+
+/* Command line iframe at bottom */
+:root #cmdline_iframe {
+  position: fixed !important;
+  top: unset !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  background-color: #000000 !important;
+  color: #f8f8f2 !important;
+  border-top: 1px solid #333 !important;
+  box-shadow: rgba(0, 0, 0, 0.8) 0px -2px 6px !important;
+  z-index: 99999 !important;
+}
+
+/* Completions dropdown */
+:root #completions {
+  background-color: #000000 !important;
+  color: #f8f8f2 !important;
+  border-top: 1px solid #333 !important;
+  width: 100% !important;
+}
+
+/* Ensure text inside completions is readable */
+:root #completions .option,
+:root #completions .focused {
+  background-color: #000000 !important;
+  color: #f8f8f2 !important;
 }
