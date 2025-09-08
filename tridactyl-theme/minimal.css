@@ -1,6 +1,6 @@
 :root {
     --tridactyl-bg: black;
-    --tridactyl-fg: white;
+    --tridactyl-fg: lightgreen;
     --tridactyl-scrollbar-color: #131 var(--tridactyl-fg);
 }
 
