@@ -1,18 +1,91 @@
-/*
-# Drop-Down List
+/* ===================================================================
+   Tridactyl Dracula Black-Bottom Theme
+   Based on Dracula + Minimal + Drop-down adjustments
+   =================================================================== */
 
-Move tridactyl to the top so the hoverlink doesn't block the command line and
-also hide the tridactyl header.
-*/
+:root {
+  /* Dracula palette */
+  --dracula-background: #000000;
+  --dracula-foreground: #f8f8f2;
+  --dracula-current-line: #44475a;
+  --dracula-comment: #6272a4;
+  --dracula-black: #000000;
+  --dracula-red: #ff5555;
+  --dracula-orange: #ffb86c;
+  --dracula-yellow: #f1fa8c;
+  --dracula-green: #50fa7b;
+  --dracula-purple: #bd93f9;
+  --dracula-cyan: #8be9fd;
+  --dracula-pink: #ff79c6;
+  --dracula-bright-cyan: #a4ffff;
 
-:root #completions .sectionHeader {
-  display: none;
+  /* Fonts */
+  --tridactyl-font-family: monospace;
+  --tridactyl-font-family-sans: monospace;
+  --tridactyl-font-size: 16px;
+  --tridactyl-small-font-size: 12px;
+
+  /* Generic */
+  --tridactyl-bg: var(--dracula-background);
+  --tridactyl-fg: var(--dracula-foreground);
+  --tridactyl-scrollbar-color: auto;
+
+  /* Mode Indicator */
+  --tridactyl-status-bg: none;
+  --tridactyl-status-fg: var(--dracula-foreground);
+
+  /* Hints */
+  --tridactyl-hintspan-fg: var(--dracula-black);
+  --tridactyl-hintspan-bg: var(--dracula-green);
+
+  /* Commandline */
+  --tridactyl-cmdl-bg: var(--dracula-background);
+  --tridactyl-cmdl-fg: var(--dracula-foreground);
+
+  /* Completions */
+  --tridactyl-cmplt-bg: var(--dracula-background);
+  --tridactyl-cmplt-fg: var(--dracula-foreground);
+
+  /* Headers */
+  --tridactyl-header-first-bg: var(--dracula-black);
+  --tridactyl-header-second-bg: var(--dracula-black);
+  --tridactyl-header-third-bg: var(--dracula-black);
 }
 
+/* ===================================================================
+   Drop-down adjustments (force bottom, pure black background)
+   =================================================================== */
+
+/* Hide section headers */
+:root #completions .sectionHeader {
+  display: none !important;
+}
+
+/* Command line iframe at bottom */
 :root #cmdline_iframe {
   position: fixed !important;
-  bottom: unset;
-  top: 0% !important;
-  left: 0% !important;
-  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 3px !important;
+  top: unset !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  background-color: #000000 !important;
+  color: #f8f8f2 !important;
+  border-top: 1px solid #333 !important;
+  box-shadow: rgba(0, 0, 0, 0.8) 0px -2px 6px !important;
+  z-index: 99999 !important;
+}
+
+/* Completions dropdown */
+:root #completions {
+  background-color: #000000 !important;
+  color: #f8f8f2 !important;
+  border-top: 1px solid #333 !important;
+  width: 100% !important;
+}
+
+/* Ensure text inside completions is readable */
+:root #completions .option,
+:root #completions .focused {
+  background-color: #000000 !important;
+  color: #f8f8f2 !important;
 }
