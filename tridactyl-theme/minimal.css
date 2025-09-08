@@ -209,3 +209,7 @@ Use the Dracula color theme on the `:help` page.
   border-bottom: 0 !important;
 }
 
+#completions .sectionHeader {
+  display: none;
+}
+
