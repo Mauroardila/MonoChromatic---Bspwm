@@ -203,3 +203,9 @@ Use the Dracula color theme on the `:help` page.
 .TridactylOwnNamespace .hljs-comment {
   color: var(--dracula-foreground) !important;
 }
+
+.TridactylOwnNamespace .TridactylHeader {
+  background-color: #000000 !important;
+  border-bottom: 0 !important;
+}
+
