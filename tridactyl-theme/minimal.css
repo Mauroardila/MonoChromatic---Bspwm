@@ -28,7 +28,7 @@
   --tridactyl-status-bg: none;
   --tridactyl-status-fg: var(--dracula-foreground);
   --tridactyl-status-border: 0;
-  --tridactyl-status-border-radius: 6px;
+  --tridactyl-status-border-radius: 0px;
 
   /* Hint Character Tags */
   --tridactyl-hintspan-font-family: var(--tridactyl-font-family);
@@ -67,9 +67,9 @@
   --tridactyl-cmplt-border-top: 0;
 
   /* Header */
-  --tridactyl-header-first-bg: var(--dracula-black);
-  --tridactyl-header-second-bg: var(--dracula-black);
-  --tridactyl-header-third-bg: var(--dracula-black);
+  --tridactyl-header-first-bg: var(--dracula-background);
+  --tridactyl-header-second-bg: var(--dracula-background);
+  --tridactyl-header-third-bg: var(--dracula-background);
   --tridactyl-header-font-size: inherit;
   --tridactyl-header-font-weight: normal;
   --tridactyl-header-border-bottom: 0;
