@@ -3,7 +3,7 @@
   --dracula-foreground: #f8f8f2;
   --dracula-current-line: #44475a;
   --dracula-comment: #6272a4;
-  --dracula-black: #21222c;
+  --dracula-black: #000000;
   --dracula-red: #ff5555;
   --dracula-orange: #ffb86c;
   --dracula-yellow: #f1fa8c;
@@ -67,9 +67,9 @@
   --tridactyl-cmplt-border-top: 0;
 
   /* Header */
-  --tridactyl-header-first-bg: var(--dracula-background);
-  --tridactyl-header-second-bg: var(--dracula-background);
-  --tridactyl-header-third-bg: var(--dracula-background);
+  --tridactyl-header-first-bg: var(--dracula-black);
+  --tridactyl-header-second-bg: var(--dracula-black);
+  --tridactyl-header-third-bg: var(--dracula-black);
   --tridactyl-header-font-size: inherit;
   --tridactyl-header-font-weight: normal;
   --tridactyl-header-border-bottom: 0;
