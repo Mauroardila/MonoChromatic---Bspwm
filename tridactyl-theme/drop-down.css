@@ -20,8 +20,8 @@
   --dracula-bright-cyan: #a4ffff;
 
   /* Fonts */
-  --tridactyl-font-family: monospace;
-  --tridactyl-font-family-sans: monospace;
+  --tridactyl-font-family: JetBrains Mono Nerd Font;
+  --tridactyl-font-family-sans: JetBrains Mono Nerd Font;
   --tridactyl-font-size: 16px;
   --tridactyl-small-font-size: 12px;
 
