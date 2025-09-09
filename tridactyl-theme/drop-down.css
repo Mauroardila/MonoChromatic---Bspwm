@@ -113,17 +113,10 @@
   z-index: 99999 !important;
 }
 
-/* Completions dropdown */
-:root #completions {
-  background-color: #000000 !important;
-  color: #f8f8f2 !important;
-  border-top: 1px solid #333 !important;
-  width: 100% !important;
-}
-
 :root #completions .focused {
   background: none !important;
   text-decoration: underline !important;
   color: var(--dracula-green) !important;
 }
+
 
