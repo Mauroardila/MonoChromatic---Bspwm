@@ -33,9 +33,20 @@
   --tridactyl-status-bg: none;
   --tridactyl-status-fg: var(--dracula-foreground);
 
-  /* Hints */
-  --tridactyl-hintspan-fg: var(--dracula-black);
-  --tridactyl-hintspan-bg: var(--dracula-green);
+/* Minimal hints: only text, no background */
+:root {
+  --tridactyl-hintspan-fg: var(--dracula-green);   /* just green letters */
+  --tridactyl-hintspan-bg: transparent;            /* no background */
+  --tridactyl-hintspan-border-width: 0;            /* no border */
+}
+
+/* Remove any extra background or outlines */
+.TridactylHintElem,
+.TridactylHint {
+  background: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
 
   /* Commandline */
   --tridactyl-cmdl-bg: var(--dracula-background);
