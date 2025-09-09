@@ -33,10 +33,6 @@
   --tridactyl-status-bg: none;
   --tridactyl-status-fg: var(--dracula-foreground);
 
-  /* Minimal hints: text only */
-  --tridactyl-hintspan-fg: var(--dracula-green);
-  --tridactyl-hintspan-bg: transparent;
-  --tridactyl-hintspan-border-width: 0;
 
   /* Commandline / completions */
   --tridactyl-cmdl-bg: var(--dracula-background);
@@ -60,16 +56,6 @@
   font-family: var(--tridactyl-font-family) !important;
 }
 
-/* Hints minimal (no boxes) */
-.TridactylHintElem,
-.TridactylHint,
-.TridactylHintElem *,
-.TridactylHint * {
-  background: none !important;
-  box-shadow: none !important;
-  border: none !important;
-  color: var(--tridactyl-hintspan-fg) !important;
-}
 
 /* Hide top header if present */
 .TridactylOwnNamespace .TridactylHeader {
@@ -144,3 +130,25 @@
 :root #completions [style*="background-color"] {
   background-color: inherit !important;
 }
+
+:root {
+  /* Pure letters for hints */
+  --tridactyl-hintspan-font-family: "JetBrainsMono Nerd Font", monospace !important;
+  --tridactyl-hintspan-font-size: 12px !important;
+  --tridactyl-hintspan-font-weight: 700 !important;
+
+  --tridactyl-hintspan-fg: #ff79c6 !important;   /* pick your color */
+  --tridactyl-hintspan-bg: none !important;
+
+  --tridactyl-hintspan-border: none !important;
+  --tridactyl-hintspan-outline: none !important;
+  --tridactyl-hintspan-box-shadow: none !important;
+  --tridactyl-hintspan-text-decoration: none !important;
+
+  --tridactyl-hintspan-padding: 0 !important;
+  --tridactyl-hintspan-margin: 0 !important;
+
+  /* Force reset for legacy hints */
+  --tridactyl-hintspan-border-radius: 0 !important;
+}
+
