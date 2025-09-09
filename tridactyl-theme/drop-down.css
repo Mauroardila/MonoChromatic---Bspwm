@@ -187,6 +187,25 @@
   color: var(--dracula-cyan) !important;
   text-decoration: underline !important;
 }
+/* === Minimal bar highlight for focused completion === */
+
+/* Base style: normal rows stay black */
+:root #completions .option {
+  background: #000000 !important;
+  color: var(--dracula-foreground) !important;
+}
+
+/* Focused row: full-width highlight bar */
+:root #completions .option.focused {
+  background: #ffffff !important;      /* white bar */
+  color: #000000 !important;           /* black text for contrast */
+}
+
+/* Optional: keep URLs on the right consistent */
+:root #completions .option.focused .annotation {
+  color: #000000 !important;           /* black to match text */
+}
+
 
 
 
