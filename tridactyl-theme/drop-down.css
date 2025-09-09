@@ -119,4 +119,12 @@
   color: var(--dracula-green) !important;
 }
 
+/* Force minimal style on focused annotation (right-side text) */
+:root #completions .focused .annotation {
+  background: none !important;
+  color: var(--dracula-green) !important;  /* or var(--dracula-foreground) */
+  text-decoration: underline !important;   /* keep consistent with left */
+}
+
+
 
