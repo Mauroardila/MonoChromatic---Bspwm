@@ -18,14 +18,11 @@
   --dracula-pink: #ff79c6;
   --dracula-bright-cyan: #a4ffff;
 
-   /* Font settings */
-  --tridactyl-font-family: "JetBrainsMono Nerd Font", monospace !important;
-  --tridactyl-font-family-sans: "JetBrainsMono Nerd Font", monospace !important;
-  --tridactyl-font-size: 12px !important;
-  --tridactyl-small-font-size: 10px !important;
-  --tridactyl-font-weight: 400 !important;  /* Regular */
-  --tridactyl-line-height: 1.4 !important;  /* terminal-like spacing */
-}
+/* Fonts - adjust name if your fc-list shows a different exact entry */
+  --tridactyl-font-family: "Iosevka Nerd Font", monospace;
+  --tridactyl-font-family-sans: "Iosevka Nerd Font", monospace;
+  --tridactyl-font-size: 16px;
+  --tridactyl-small-font-size: 12px;
 
   /* Generic */
   --tridactyl-bg: var(--dracula-background);
