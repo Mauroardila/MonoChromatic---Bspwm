@@ -125,6 +125,44 @@
   color: var(--dracula-green) !important;  /* or var(--dracula-foreground) */
   text-decoration: underline !important;   /* keep consistent with left */
 }
+/* ===== Remove yellow highlight from focused row (both left text + right annotation) ===== */
+
+/* Broad override for focused option and everything inside it */
+:root #completions .option.focused,
+:root #completions .option.focused *,
+:root #completions .focused,
+:root #completions .focused * {
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  color: var(--dracula-foreground) !important;
+  -webkit-text-fill-color: var(--dracula-foreground) !important;
+  text-decoration: none !important;
+}
+
+/* Make left name minimal: underline + green (if you prefer) */
+:root #completions .option.focused .optionText,
+:root #completions .focused .optionText {
+  text-decoration: underline !important;
+  color: var(--dracula-green) !important;
+  background: transparent !important;
+}
+
+/* IMPORTANT: target right-side annotation (host / URL / domain / any children) */
+:root #completions .option .annotation,
+:root #completions .option .annotation *,
+:root #completions .focused .annotation,
+:root #completions .focused .annotation * {
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  color: var(--dracula-green) !important;
+  -webkit-text-fill-color: var(--dracula-green) !important;
+  text-decoration: underline !important;
+}
+
 
 
 
