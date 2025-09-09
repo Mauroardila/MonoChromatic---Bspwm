@@ -127,3 +127,9 @@
   background-color: #000000 !important;
   color: #f8f8f2 !important;
 }
+:root #completions .focused {
+  background: none !important;
+  text-decoration: underline !important;
+  color: var(--dracula-green) !important;
+}
+
