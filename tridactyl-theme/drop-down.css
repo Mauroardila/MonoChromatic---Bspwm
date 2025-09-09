@@ -174,4 +174,152 @@
   text-decoration: none !important;
 }
 
+/* ===== COMPLETE HINT RESET - letters only, no box ===== */
+
+/* variables fallback */
+:root {
+  --tridactyl-hintspan-bg: transparent !important;
+  --tridactyl-hintspan-border: none !important;
+  --tridactyl-hintspan-padding: 0 !important;
+  --tridactyl-hintspan-margin: 0 !important;
+  --tridactyl-hintspan-border-radius: 0 !important;
+}
+
+/* Brutal reset for all known hint classes/selectors and their children */
+:root .TridactylHint,
+:root .TridactylHintElem,
+:root [class*="TridactylHint"],
+:root [class*="tridactyl-hint"],
+:root [data-tridactyl-hint],
+:root .tridactylHint,
+:root .hint,
+:root .hint * {
+  background: none !important;
+  background-image: none !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  min-width: unset !important;
+  min-height: unset !important;
+  height: auto !important;
+  width: auto !important;
+  display: inline !important;
+  line-height: normal !important;
+  vertical-align: baseline !important;
+  text-decoration: none !important;
+  -webkit-text-fill-color: unset !important;
+  -webkit-text-stroke: 0 !important;
+  text-shadow: none !important;
+  border-radius: 0 !important;
+  clip-path: none !important;
+  transform: none !important;
+  appearance: none !important;
+}
+
+/* Also reset pseudo-elements produced by hints */
+:root .TridactylHint::before,
+:root .TridactylHint::after,
+:root .TridactylHintElem::before,
+:root .TridactylHintElem::after,
+:root [class*="TridactylHint"]::before,
+:root [class*="TridactylHint"]::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Make the letter itself visible and styled as a plain letter */
+:root .TridactylHint span,
+:root .TridactylHintElem span,
+:root .TridactylHint > *,
+:root .TridactylHintElem > * {
+  background: none !important;
+  color: var(--dracula-green, #50fa7b) !important; /* choose color */
+  font-family: var(--tridactyl-font-family) !important;
+  font-weight: 600 !important;
+  font-size: 12px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  display: inline !important;
+  line-height: normal !important;
+  text-decoration: none !important;
+}
+/* ===== COMPLETE HINT RESET - letters only, no box ===== */
+
+/* variables fallback */
+:root {
+  --tridactyl-hintspan-bg: transparent !important;
+  --tridactyl-hintspan-border: none !important;
+  --tridactyl-hintspan-padding: 0 !important;
+  --tridactyl-hintspan-margin: 0 !important;
+  --tridactyl-hintspan-border-radius: 0 !important;
+}
+
+/* Brutal reset for all known hint classes/selectors and their children */
+:root .TridactylHint,
+:root .TridactylHintElem,
+:root [class*="TridactylHint"],
+:root [class*="tridactyl-hint"],
+:root [data-tridactyl-hint],
+:root .tridactylHint,
+:root .hint,
+:root .hint * {
+  background: none !important;
+  background-image: none !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  min-width: unset !important;
+  min-height: unset !important;
+  height: auto !important;
+  width: auto !important;
+  display: inline !important;
+  line-height: normal !important;
+  vertical-align: baseline !important;
+  text-decoration: none !important;
+  -webkit-text-fill-color: unset !important;
+  -webkit-text-stroke: 0 !important;
+  text-shadow: none !important;
+  border-radius: 0 !important;
+  clip-path: none !important;
+  transform: none !important;
+  appearance: none !important;
+}
+
+/* Also reset pseudo-elements produced by hints */
+:root .TridactylHint::before,
+:root .TridactylHint::after,
+:root .TridactylHintElem::before,
+:root .TridactylHintElem::after,
+:root [class*="TridactylHint"]::before,
+:root [class*="TridactylHint"]::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Make the letter itself visible and styled as a plain letter */
+:root .TridactylHint span,
+:root .TridactylHintElem span,
+:root .TridactylHint > *,
+:root .TridactylHintElem > * {
+  background: none !important;
+  color: var(--dracula-green, #50fa7b) !important; /* choose color */
+  font-family: var(--tridactyl-font-family) !important;
+  font-weight: 600 !important;
+  font-size: 12px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  display: inline !important;
+  line-height: normal !important;
+  text-decoration: none !important;
+}
 
