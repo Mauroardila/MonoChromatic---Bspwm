@@ -205,6 +205,26 @@
 :root #completions .option.focused .annotation {
   color: #000000 !important;           /* black to match text */
 }
+/* === Minimal bar highlight with visible text === */
+
+/* Normal rows */
+:root #completions .option {
+  background: #000000 !important;
+  color: var(--dracula-foreground) !important;
+}
+
+/* Focused row: white background + black text */
+:root #completions .option.focused {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+
+/* Force titles and annotations inside the focused row to be black */
+:root #completions .option.focused .title,
+:root #completions .option.focused .url,
+:root #completions .option.focused .annotation {
+  color: #000000 !important;
+}
 
 
 
