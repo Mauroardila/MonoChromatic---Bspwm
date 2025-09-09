@@ -152,3 +152,26 @@
   --tridactyl-hintspan-border-radius: 0 !important;
 }
 
+/* ===== Minimal Hints: letters only (no highlight box) ===== */
+:root .TridactylHint,
+:root .TridactylHintElem {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  text-decoration: none !important;
+}
+
+:root .TridactylHint span {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  text-decoration: none !important;
+}
+
+
