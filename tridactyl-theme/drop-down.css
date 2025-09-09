@@ -168,7 +168,7 @@
 :root #completions .option.focused,
 :root #completions .focused {
   background: none !important;
-  color: var(--dracula-green) !important;
+  color: var(--dracula-cyan) !important;
   text-decoration: underline !important;
 }
 
@@ -176,7 +176,7 @@
 :root #completions .option.focused .optionText,
 :root #completions .focused .optionText {
   background: none !important;
-  color: var(--dracula-green) !important;
+  color: var(--dracula-cyan) !important;
   text-decoration: underline !important;
 }
 
@@ -184,7 +184,7 @@
 :root #completions .option.focused .annotation,
 :root #completions .focused .annotation {
   background: none !important;
-  color: var(--dracula-green) !important;
+  color: var(--dracula-cyan) !important;
   text-decoration: underline !important;
 }
 
