@@ -18,7 +18,7 @@
   --dracula-pink: #ff79c6;
   --dracula-bright-cyan: #a4ffff;
 
-/* Fonts - adjust name if your fc-list shows a different exact entry */
+  /* Fonts - adjust name if your fc-list shows a different exact entry */
   --tridactyl-font-family: "Iosevka Nerd Font", monospace;
   --tridactyl-font-family-sans: "Iosevka Nerd Font", monospace;
   --tridactyl-font-size: 16px;
