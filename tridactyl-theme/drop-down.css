@@ -1,8 +1,8 @@
-/* ===================================================================
-   Tridactyl Dracula Black-Bottom Theme with Iosevka Nerd Font
-   =================================================================== */
+/* Tridactyl Dracula Black-Bottom — cleaned & consolidated
+   Uses Iosevka Nerd Font; white full-row highlight on focused option
+*/
 
-:root {
+:root{
   /* Dracula palette */
   --dracula-background: #000000;
   --dracula-foreground: #ffffff;
@@ -18,9 +18,9 @@
   --dracula-pink: #ff79c6;
   --dracula-bright-cyan: #a4ffff;
 
-  /* Fonts */
-  --tridactyl-font-family: "JetBrainsMono Nerd Font Mono", monospace;
-  --tridactyl-font-family-sans: "JetBrainsMono Nerd Font", monospace;
+  /* Fonts - adjust name if your fc-list shows a different exact entry */
+  --tridactyl-font-family: "Iosevka Nerd Font", monospace;
+  --tridactyl-font-family-sans: "Iosevka Nerd Font", monospace;
   --tridactyl-font-size: 16px;
   --tridactyl-small-font-size: 12px;
 
@@ -29,30 +29,18 @@
   --tridactyl-fg: var(--dracula-foreground);
   --tridactyl-scrollbar-color: auto;
 
-  /* Mode Indicator */
+  /* Status & small things */
   --tridactyl-status-bg: none;
   --tridactyl-status-fg: var(--dracula-foreground);
 
-/* Minimal hints: only text, no background */
-:root {
-  --tridactyl-hintspan-fg: var(--dracula-green);   /* just green letters */
-  --tridactyl-hintspan-bg: transparent;            /* no background */
-  --tridactyl-hintspan-border-width: 0;            /* no border */
-}
+  /* Minimal hints: text only */
+  --tridactyl-hintspan-fg: var(--dracula-green);
+  --tridactyl-hintspan-bg: transparent;
+  --tridactyl-hintspan-border-width: 0;
 
-/* Remove any extra background or outlines */
-.TridactylHintElem,
-.TridactylHint {
-  background: none !important;
-  box-shadow: none !important;
-  border: none !important;
-}
-
-  /* Commandline */
+  /* Commandline / completions */
   --tridactyl-cmdl-bg: var(--dracula-background);
   --tridactyl-cmdl-fg: var(--dracula-foreground);
-
-  /* Completions */
   --tridactyl-cmplt-bg: var(--dracula-background);
   --tridactyl-cmplt-fg: var(--dracula-foreground);
 
@@ -62,171 +50,97 @@
   --tridactyl-header-third-bg: var(--dracula-black);
 }
 
-/* ===================================================================
-   Force Iosevka Nerd Font everywhere
-   =================================================================== */
-
-/* Command line iframe */
+/* ============== Force font everywhere inside Tridactyl content ============== */
+.TridactylOwnNamespace,
+.TridactylOwnNamespace * ,
 :root #cmdline_iframe,
-:root #cmdline_iframe * {
-  font-family: "JetBrainsMono Nerd Font Mono", monospace !important;
-}
-
-/* Completions dropdown */
+:root #cmdline_iframe *,
 :root #completions,
 :root #completions * {
-  font-family: "JetBrainsMono Nerd Font Mono", monospace !important;
+  font-family: var(--tridactyl-font-family) !important;
 }
 
-/* Hints */
-:root .TridactylHintElem,
-:root .TridactylHint {
-  font-family: "JetBrainsMono Nerd Font Mono", monospace !important;
+/* Hints minimal (no boxes) */
+.TridactylHintElem,
+.TridactylHint,
+.TridactylHintElem *,
+.TridactylHint * {
+  background: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  color: var(--tridactyl-hintspan-fg) !important;
 }
 
-/* Status indicator */
-:root #tridactyl-status,
-:root #tridactyl-status * {
-  font-family: "JetBrainsMono Nerd Font Mono", monospace !important;
+/* Hide top header if present */
+.TridactylOwnNamespace .TridactylHeader {
+  background-color: var(--dracula-black) !important;
+  border-bottom: 0 !important;
 }
 
-/* ===================================================================
-   Drop-down adjustments (force bottom, pure black background)
-   =================================================================== */
-
-/* Hide section headers */
+/* ===== Drop-down / commandline placement ===== */
+/* Hide builtin section headers */
 :root #completions .sectionHeader {
   display: none !important;
 }
 
-/* Command line iframe at bottom */
+/* Commandline iframe pinned to bottom */
 :root #cmdline_iframe {
   position: fixed !important;
   top: unset !important;
   bottom: 0 !important;
   left: 0 !important;
   width: 100% !important;
-  background-color: #000000 !important;
-  color: #f8f8f2 !important;
+  background-color: var(--dracula-background) !important;
+  color: var(--dracula-foreground) !important;
   border-top: 1px solid #333 !important;
-  box-shadow: rgba(0, 0, 0, 0.8) 0px -2px 6px !important;
+  box-shadow: rgba(0,0,0,0.8) 0px -2px 6px !important;
   z-index: 99999 !important;
 }
 
-:root #completions .focused {
-  background: none !important;
-  text-decoration: underline !important;
-  color: var(--dracula-green) !important;
+/* ===== Completions base style (normal rows) ===== */
+:root #completions .option,
+:root #completions .option * {
+  background: var(--dracula-background) !important;
+  color: var(--tridactyl-cmplt-fg) !important;
 }
 
-/* Force minimal style on focused annotation (right-side text) */
-:root #completions .focused .annotation {
-  background: none !important;
-  color: var(--dracula-green) !important;  /* or var(--dracula-foreground) */
-  text-decoration: underline !important;   /* keep consistent with left */
-}
-/* ===== Remove yellow highlight from focused row (both left text + right annotation) ===== */
-
-/* Broad override for focused option and everything inside it */
+/* ===== Focused option: full white bar + black text ===== */
+/* Apply to focused option and all its children to avoid partial invisible text */
 :root #completions .option.focused,
-:root #completions .option.focused *,
+:root #completions .option.focused * ,
 :root #completions .focused,
 :root #completions .focused * {
-  background: transparent !important;
-  background-color: transparent !important;
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  -webkit-text-fill-color: #000000 !important;
   box-shadow: none !important;
   border: none !important;
-  color: var(--dracula-foreground) !important;
-  -webkit-text-fill-color: var(--dracula-foreground) !important;
   text-decoration: none !important;
 }
 
-/* Make left name minimal: underline + green (if you prefer) */
+/* Ensure title/option text is black on focused row */
 :root #completions .option.focused .optionText,
-:root #completions .focused .optionText {
-  text-decoration: underline !important;
-  color: var(--dracula-green) !important;
-  background: transparent !important;
-}
-
-/* IMPORTANT: target right-side annotation (host / URL / domain / any children) */
-:root #completions .option .annotation,
-:root #completions .option .annotation *,
-:root #completions .focused .annotation,
-:root #completions .focused .annotation * {
-  background: transparent !important;
-  background-color: transparent !important;
-  box-shadow: none !important;
-  border: none !important;
-  color: var(--dracula-green) !important;
-  -webkit-text-fill-color: var(--dracula-green) !important;
-  text-decoration: underline !important;
-}
-/* ===== Global focused option styling ===== */
-
-/* All focused rows */
-:root #completions .option.focused,
-:root #completions .focused {
-  background: none !important;
-  color: var(--dracula-cyan) !important;
-  text-decoration: underline !important;
-}
-
-/* Ensure the text part (command name, filename, etc.) */
-:root #completions .option.focused .optionText,
-:root #completions .focused .optionText {
-  background: none !important;
-  color: var(--dracula-cyan) !important;
-  text-decoration: underline !important;
-}
-
-/* Ensure annotations/extra info (URLs, descriptions, etc.) */
-:root #completions .option.focused .annotation,
-:root #completions .focused .annotation {
-  background: none !important;
-  color: var(--dracula-cyan) !important;
-  text-decoration: underline !important;
-}
-/* === Minimal bar highlight for focused completion === */
-
-/* Base style: normal rows stay black */
-:root #completions .option {
-  background: #000000 !important;
-  color: var(--dracula-foreground) !important;
-}
-
-/* Focused row: full-width highlight bar */
-:root #completions .option.focused {
-  background: #ffffff !important;      /* white bar */
-  color: #000000 !important;           /* black text for contrast */
-}
-
-/* Optional: keep URLs on the right consistent */
-:root #completions .option.focused .annotation {
-  color: #000000 !important;           /* black to match text */
-}
-/* === Minimal bar highlight with visible text === */
-
-/* Normal rows */
-:root #completions .option {
-  background: #000000 !important;
-  color: var(--dracula-foreground) !important;
-}
-
-/* Focused row: white background + black text */
-:root #completions .option.focused {
-  background: #ffffff !important;
-  color: #000000 !important;
-}
-
-/* Force titles and annotations inside the focused row to be black */
 :root #completions .option.focused .title,
-:root #completions .option.focused .url,
-:root #completions .option.focused .annotation {
+:root #completions .focused .optionText,
+:root #completions .focused .title {
   color: #000000 !important;
+  text-decoration: none !important;
+  background: transparent !important;
 }
 
+/* Ensure annotation / URL on the right is black on focused row */
+:root #completions .option.focused .annotation,
+:root #completions .focused .annotation,
+:root #completions .option.focused .url,
+:root #completions .focused .url {
+  color: #000000 !important;
+  text-decoration: none !important;
+  background: transparent !important;
+}
 
-
-
-
+/* small safety: force no yellow overrides left anywhere */
+:root #completions [style*="background"],
+:root #completions [style*="background-color"] {
+  background-color: inherit !important;
+}
