@@ -14,8 +14,8 @@
   --dracula-bright-cyan: #f4ffff;
 
   /* Generic */
-  --tridactyl-font-family: monospace;
-  --tridactyl-font-family-sans: monospace;
+  --tridactyl-font-family: "Iosevka Nerd Font", monospace;
+  --tridactyl-font-family-sans: "Iosevka Nerd Font", monospace;
   --tridactyl-font-size: 16px;
   --tridactyl-small-font-size: 12px;
   --tridactyl-bg: var(--dracula-background);
@@ -23,8 +23,8 @@
   --tridactyl-scrollbar-color: auto;
 
   /* Mode Indicator */
-  --tridactyl-status-font-family: var(--tridactyl-font-family);
-  --tridactyl-status-font-size: var(--tridactyl-small-font-size);
+  --tridactyl-status-font-family: "Iosevka Nerd Font", monospace;
+  --tridactyl-status-font-size: "Iosevka Nerd Font", monospace;
   --tridactyl-status-bg: none;
   --tridactyl-status-fg: var(--dracula-foreground);
   --tridactyl-status-border: 0;
