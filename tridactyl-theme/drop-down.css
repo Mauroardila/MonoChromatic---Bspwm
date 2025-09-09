@@ -121,12 +121,6 @@
   width: 100% !important;
 }
 
-/* Ensure text inside completions is readable */
-:root #completions .option,
-:root #completions .focused {
-  background-color: #000000 !important;
-  color: #f8f8f2 !important;
-}
 :root #completions .focused {
   background: none !important;
   text-decoration: underline !important;
