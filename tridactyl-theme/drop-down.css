@@ -162,6 +162,31 @@
   -webkit-text-fill-color: var(--dracula-green) !important;
   text-decoration: underline !important;
 }
+/* ===== Global focused option styling ===== */
+
+/* All focused rows */
+:root #completions .option.focused,
+:root #completions .focused {
+  background: none !important;
+  color: var(--dracula-green) !important;
+  text-decoration: underline !important;
+}
+
+/* Ensure the text part (command name, filename, etc.) */
+:root #completions .option.focused .optionText,
+:root #completions .focused .optionText {
+  background: none !important;
+  color: var(--dracula-green) !important;
+  text-decoration: underline !important;
+}
+
+/* Ensure annotations/extra info (URLs, descriptions, etc.) */
+:root #completions .option.focused .annotation,
+:root #completions .focused .annotation {
+  background: none !important;
+  color: var(--dracula-green) !important;
+  text-decoration: underline !important;
+}
 
 
 
