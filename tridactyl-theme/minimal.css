@@ -268,24 +268,5 @@ Use the Dracula color theme on the `:help` page.
   display: none !important;
 }
 
-/* Make the letter itself visible and styled as a plain letter */
-:root .TridactylHint span,
-:root .TridactylHintElem span,
-:root .TridactylHint > *,
-:root .TridactylHintElem > * {
-  background: none !important;
-  color: var(--dracula-green, #50fa7b) !important; /* choose color */
-  font-family: var(--tridactyl-font-family) !important;
-  font-weight: 600 !important;
-  font-size: 12px !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  border: none !important;
-  box-shadow: none !important;
-  display: inline !important;
-  line-height: normal !important;
-  text-decoration: none !important;
-}
-
 
 
