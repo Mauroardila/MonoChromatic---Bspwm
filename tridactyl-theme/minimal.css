@@ -35,7 +35,7 @@
   --tridactyl-hintspan-font-size: var(--tridactyl-small-font-size);
   --tridactyl-hintspan-font-weight: bold;
    --tridactyl-hintspan-bg: transparent !important;
-  --tridactyl-hintspan-fg: var(--dracula-white);
+  --tridactyl-hintspan-fg: var(--dracula-purple);
   --tridactyl-hintspan-border-width: 0;
 
   /* Hint Element Highlights */
