@@ -203,3 +203,14 @@ Use the Dracula color theme on the `:help` page.
 .TridactylOwnNamespace .hljs-comment {
   color: var(--dracula-foreground) !important;
 }
+/* Focused completion row: white background, black text */
+:root #completions .option.focused,
+:root #completions .option.focused *,
+:root #completions .focused,
+:root #completions .focused * {
+  background: #ffffff !important;
+  color: #000000 !important;
+  -webkit-text-fill-color: #000000 !important;
+  text-decoration: none !important;
+}
+
