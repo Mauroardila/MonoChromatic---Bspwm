@@ -34,7 +34,7 @@
   --tridactyl-hintspan-font-family: var(--tridactyl-font-family);
   --tridactyl-hintspan-font-size: var(--tridactyl-small-font-size);
   --tridactyl-hintspan-font-weight: bold;
-  --tridactyl-hintspan-fg: var(--dracula-black);
+  --tridactyl-hintspan-fg: var(--dracula-white);
   --tridactyl-hintspan-bg: var(--dracula-green);
   --tridactyl-hintspan-border-width: 0;
   --tridactyl-hintspan-js-background: var(--dracula-red);
