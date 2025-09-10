@@ -257,16 +257,5 @@ Use the Dracula color theme on the `:help` page.
   appearance: none !important;
 }
 
-/* Also reset pseudo-elements produced by hints */
-:root .TridactylHint::before,
-:root .TridactylHint::after,
-:root .TridactylHintElem::before,
-:root .TridactylHintElem::after,
-:root [class*="TridactylHint"]::before,
-:root [class*="TridactylHint"]::after {
-  content: none !important;
-  display: none !important;
-}
-
 
 
