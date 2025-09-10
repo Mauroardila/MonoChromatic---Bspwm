@@ -14,8 +14,8 @@
   --dracula-bright-cyan: #f4ffff;
 
   /* Generic */
-  --tridactyl-font-family: "Iosevka Nerd Font", monospace;
-  --tridactyl-font-family-sans: "Iosevka Nerd Font", monospace;
+  --tridactyl-font-family: "JetBrainsMono Nerd Font", monospace !important;
+  --tridactyl-font-family-sans: "JetBrainsMono Nerd Font", monospace !important;
   --tridactyl-font-size: 16px;
   --tridactyl-small-font-size: 12px;
   --tridactyl-bg: var(--dracula-background);
@@ -23,8 +23,8 @@
   --tridactyl-scrollbar-color: auto;
 
   /* Mode Indicator */
-  --tridactyl-status-font-family: "Iosevka Nerd Font", monospace;
-  --tridactyl-status-font-size: "Iosevka Nerd Font", monospace;
+  --tridactyl-status-font-family: "JetBrainsMono Nerd Font", monospace !important;
+  --tridactyl-status-font-size: "JetBrainsMono Nerd Font", monospace !important;
   --tridactyl-status-bg: none;
   --tridactyl-status-fg: var(--dracula-foreground);
   --tridactyl-status-border: 0;
@@ -55,7 +55,7 @@
   --tridactyl-cmdl-bg: var(--dracula-background);
   --tridactyl-cmdl-fg: var(--dracula-foreground);
   --tridactyl-cmdl-line-height: 1.6;
-  --tridactyl-cmdl-font-family: monospace;
+  --tridactyl-cmdl-font-family: "JetBrainsMono Nerd Font", monospace !important;
   --tridactyl-cmdl-font-size: var(--tridactyl-small-font-size);
 
   /* Completions */
@@ -63,7 +63,7 @@
   --tridactyl-cmplt-fg: var(--dracula-comment);
   --tridactyl-cmplt-bg: var(--dracula-background);
   --tridactyl-cmplt-font-size: var(--tridactyl-small-font-size);
-  --tridactyl-cmplt-font-family: monospace;
+  --tridactyl-cmplt-font-family: "JetBrainsMono Nerd Font", monospace !important;
   --tridactyl-cmplt-border-top: 0;
 
   /* Header */
