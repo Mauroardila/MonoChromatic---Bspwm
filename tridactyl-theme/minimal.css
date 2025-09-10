@@ -34,10 +34,9 @@
   --tridactyl-hintspan-font-family: var(--tridactyl-font-family);
   --tridactyl-hintspan-font-size: var(--tridactyl-small-font-size);
   --tridactyl-hintspan-font-weight: bold;
+   --tridactyl-hintspan-bg: transparent !important;
   --tridactyl-hintspan-fg: var(--dracula-white);
-  --tridactyl-hintspan-bg: var(--dracula-green);
   --tridactyl-hintspan-border-width: 0;
-  --tridactyl-hintspan-js-background: var(--dracula-red);
 
   /* Hint Element Highlights */
   --tridactyl-hint-bg: none;
@@ -213,18 +212,5 @@ Use the Dracula color theme on the `:help` page.
   -webkit-text-fill-color: #000000 !important;
   text-decoration: none !important;
 }
-/* Hints */
-  --tridactyl-hintspan-font-family: "JetBrainsMono Nerd Font", monospace !important;
-  --tridactyl-hintspan-font-size: 12px !important;
-  --tridactyl-hintspan-font-weight: 700 !important;
-  --tridactyl-hintspan-fg: #ff79c6 !important; /* color of hint letters */
-  --tridactyl-hintspan-bg: transparent !important;
-  --tridactyl-hintspan-border: none !important;
-  --tridactyl-hintspan-outline: none !important;
-  --tridactyl-hintspan-box-shadow: none !important;
-  --tridactyl-hintspan-text-decoration: none !important;
-  --tridactyl-hintspan-padding: 0 !important;
-  --tridactyl-hintspan-margin: 0 !important;
-  --tridactyl-hintspan-border-radius: 0 !important;
-}
+
 
