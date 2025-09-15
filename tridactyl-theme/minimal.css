@@ -256,6 +256,26 @@ Use the Dracula color theme on the `:help` page.
   transform: none !important;
   appearance: none !important;
 }
+/* ===== Estilo minimalista para hints ===== */
+:root .TridactylHint {
+  position: relative !important;
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 2px !important; /* separación ligera */
+  font-size: 12px !important;
+  font-weight: bold !important;
+  font-family: "JetBrainsMono Nerd Font", monospace !important;
+  color: #ff79c6 !important; /* rosa drácula */
+  text-shadow: 1px 1px 2px #000000 !important; /* contraste sobre fondos claros */
+  z-index: 999999 !important;
+}
+
+/* Cuando hay muchas hints activas, que resalten */
+:root .TridactylHintActive {
+  color: #50fa7b !important; /* verde drácula */
+  text-shadow: 1px 1px 3px #000 !important;
+}
 
 
 
