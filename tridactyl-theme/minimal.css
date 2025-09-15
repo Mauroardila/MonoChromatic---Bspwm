@@ -232,3 +232,8 @@ Use the Dracula color theme on the `:help` page.
   color: #50fa7b !important; /* verde drácula */
   text-shadow: 1px 1px 3px #000 !important;
 }
+:root .TridactylHint {
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+}
