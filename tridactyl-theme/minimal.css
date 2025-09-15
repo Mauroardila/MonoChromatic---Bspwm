@@ -212,23 +212,3 @@ Use the Dracula color theme on the `:help` page.
   -webkit-text-fill-color: #000000 !important;
   text-decoration: none !important;
 }
-/* ===== Estilo minimalista para hints ===== */
-:root .TridactylHint {
-  position: relative !important;
-  background: none !important;
-  border: none !important;
-  padding: 0 !important;
-  margin: 0 2px !important; /* separación ligera */
-  font-size: 12px !important;
-  font-weight: bold !important;
-  font-family: "JetBrainsMono Nerd Font", monospace !important;
-  color: #ff79c6 !important; /* rosa drácula */
-  text-shadow: 1px 1px 2px #000000 !important; /* contraste sobre fondos claros */
-  z-index: 999999 !important;
-}
-
-:root .TridactylHint {
-  background: none !important;
-  border: none !important;
-  padding: 0 !important;
-}
