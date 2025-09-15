@@ -212,61 +212,23 @@ Use the Dracula color theme on the `:help` page.
   -webkit-text-fill-color: #000000 !important;
   text-decoration: none !important;
 }
-/* ===== COMPLETE HINT RESET - letters only, no box ===== */
-
-/* variables fallback */
-:root {
-  --tridactyl-hintspan-bg: transparent !important;
-  --tridactyl-hintspan-border: none !important;
-  --tridactyl-hintspan-padding: 0 !important;
-  --tridactyl-hintspan-margin: 0 !important;
-  --tridactyl-hintspan-border-radius: 0 !important;
-}
-
-/* Brutal reset for all known hint classes/selectors and their children */
-:root .TridactylHint,
-:root .TridactylHintElem,
-:root [class*="TridactylHint"],
-:root [class*="tridactyl-hint"],
-:root [data-tridactyl-hint],
-:root .tridactylHint,
-:root .hint,
-:root .hint * {
-  background: none !important;
-  background-image: none !important;
-  background-color: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  outline: none !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  min-width: unset !important;
-  min-height: unset !important;
-  height: auto !important;
-  width: auto !important;
-  display: inline !important;
-  line-height: normal !important;
-  vertical-align: baseline !important;
-  text-decoration: none !important;
-  -webkit-text-fill-color: unset !important;
-  -webkit-text-stroke: 0 !important;
-  text-shadow: none !important;
-  border-radius: 0 !important;
-  clip-path: none !important;
-  transform: none !important;
-  appearance: none !important;
-}
+/* ===== Estilo minimalista para hints ===== */
 :root .TridactylHint {
-  position: absolute !important;
+  position: relative !important;
   background: none !important;
   border: none !important;
-  color: yellow !important;
-  font-size: 14px !important;
+  padding: 0 !important;
+  margin: 0 2px !important; /* separación ligera */
+  font-size: 12px !important;
   font-weight: bold !important;
-  text-shadow: 1px 1px 2px black !important;
+  font-family: "JetBrainsMono Nerd Font", monospace !important;
+  color: #ff79c6 !important; /* rosa drácula */
+  text-shadow: 1px 1px 2px #000000 !important; /* contraste sobre fondos claros */
   z-index: 999999 !important;
 }
 
-
-
-
+/* Cuando hay muchas hints activas, que resalten */
+:root .TridactylHintActive {
+  color: #50fa7b !important; /* verde drácula */
+  text-shadow: 1px 1px 3px #000 !important;
+}
