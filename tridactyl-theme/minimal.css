@@ -224,4 +224,19 @@ Use the Dracula color theme on the `:help` page.
   margin: 0 !important;
   text-shadow: 1px 1px 2px black !important; /* makes them readable */
 }
+/* Custom Tridactyl hints: purple letters in black squares with white borders */
+:root .TridactylHint {
+  background: black !important;
+  border: 1px solid white !important;
+  border-radius: 3px !important;
+  padding: 2px 4px !important;
+  margin: 0 !important;
+  font-family: "JetBrainsMono Nerd Font", monospace !important;
+  font-size: 14px !important;
+  font-weight: bold !important;
+  color: #b162ff !important; /* purple letters */
+  text-shadow: none !important;
+  z-index: 2147483647 !important; /* keep on top of everything */
+}
+
 
