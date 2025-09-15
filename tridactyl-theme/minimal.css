@@ -212,3 +212,16 @@ Use the Dracula color theme on the `:help` page.
   -webkit-text-fill-color: #000000 !important;
   text-decoration: none !important;
 }
+/* Force Tridactyl hint letters to display */
+:root .TridactylHint span {
+  color: var(--dracula-pink) !important; /* pick any Dracula color */
+  font-family: "JetBrainsMono Nerd Font", monospace !important;
+  font-size: 14px !important;
+  font-weight: bold !important;
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  text-shadow: 1px 1px 2px black !important; /* makes them readable */
+}
+
