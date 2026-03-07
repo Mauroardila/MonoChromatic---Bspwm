@@ -1,43 +1,49 @@
 :root {
-    --tridactyl-bg: #000000;
-    --tridactyl-fg: lightgreen;
+
+    /* Global background */
+    --tridactyl-bg: #000000 !important;
+    --tridactyl-fg: #e6e6e6 !important;
+
+    /* Command line */
+    --tridactyl-cmdl-bg: #000000 !important;
+    --tridactyl-cmdl-fg: #e6e6e6 !important;
+
+    /* Completions */
+    --tridactyl-cmplt-bg: #000000 !important;
+    --tridactyl-cmplt-fg: #e6e6e6 !important;
+
+    /* Headers */
+    --tridactyl-header-first-bg: #000000 !important;
+    --tridactyl-header-second-bg: #000000 !important;
+    --tridactyl-header-third-bg: #000000 !important;
+
+    /* Status indicator */
+    --tridactyl-status-bg: #000000 !important;
+    --tridactyl-status-fg: #e6e6e6 !important;
+
+    /* Hints */
+    --tridactyl-hintspan-bg: #000000 !important;
+    --tridactyl-hint-bg: #000000 !important;
 }
 
-/* command line container */
-#cmdline_iframe {
-    position: fixed !important;
-    top: 0 !important;
-    left: 0 !important;
+/* Force background layers */
+
+#cmdline_iframe,
+#command-line-holder,
+#completions {
     background: #000000 !important;
     opacity: 1 !important;
     box-shadow: none !important;
 }
 
-/* main command bar */
-#tridactyl-colon,
-#tridactyl-input {
-    background: #000000 !important;
-    color: var(--tridactyl-fg) !important;
-}
+/* Completion rows */
 
-/* completions panel */
-#completions {
-    background: #000000 !important;
-}
-
-/* completion rows */
 #completions > div {
     background: #000000 !important;
-    color: var(--tridactyl-fg) !important;
 }
 
-/* focused completion */
-#completions .focused {
-    background: #000000 !important;
-    text-decoration: underline;
-}
+/* Remove borders */
 
-/* remove borders and separators */
 * {
-    border: none !important;
+    border-color: #000000 !important;
 }
