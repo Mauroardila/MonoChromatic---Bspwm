@@ -1,50 +1,43 @@
 :root {
     --tridactyl-bg: #000000;
-    --tridactyl-fg: #90ee90; /* light green */
-    --tridactyl-scrollbar-color: #000 var(--tridactyl-fg);
+    --tridactyl-fg: lightgreen;
 }
 
-/* scrollbar */
-:root.TridactylOwnNamespace {
-    scrollbar-color: var(--tridactyl-scrollbar-color);
-    scrollbar-width: thin;
+/* command line container */
+#cmdline_iframe {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    background: #000000 !important;
+    opacity: 1 !important;
+    box-shadow: none !important;
 }
 
-/* remove completion headers */
-:root #completions .sectionHeader {
-    display: none;
+/* main command bar */
+#tridactyl-colon,
+#tridactyl-input {
+    background: #000000 !important;
+    color: var(--tridactyl-fg) !important;
 }
 
-/* prompt symbol */
-:root #tridactyl-colon::before {
-    content: "] ";
-}
-
-/* completions container */
-:root #completions {
-    background: var(--tridactyl-bg) !important;
+/* completions panel */
+#completions {
+    background: #000000 !important;
 }
 
 /* completion rows */
-:root #completions > div {
-    background: var(--tridactyl-bg) !important;
+#completions > div {
+    background: #000000 !important;
     color: var(--tridactyl-fg) !important;
 }
 
-/* selected completion */
-:root #completions .focused,
-:root #completions .focused .url {
+/* focused completion */
+#completions .focused {
     background: #000000 !important;
-    color: var(--tridactyl-fg) !important;
     text-decoration: underline;
 }
 
-/* command line */
-:root #cmdline_iframe {
-    position: fixed !important;
-    top: 0% !important;
-    left: 0% !important;
-    background: #000000 !important;
-    box-shadow: none !important;   /* remove glow */
-    opacity: 1 !important;         /* remove transparency */
+/* remove borders and separators */
+* {
+    border: none !important;
 }
